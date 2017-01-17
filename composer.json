@@ -10,10 +10,10 @@
   ],
   "autoload": {
     "psr-4": {
-
+      "JoshHarington\\LaravelLTI\\": "src/"
     },
     "files": [
-
+      "src/Helpers/helpers.php"
     ]
   },
   "require": {
