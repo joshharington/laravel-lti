@@ -6,7 +6,15 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitf07ee47ab0dd0348127c0fbb805488c2
 {
+    public static $files = array (
+        '79fa55d24d9c1b66a957240c7c59889f' => __DIR__ . '/../..' . '/src/Helpers/helpers.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'J' => 
+        array (
+            'JoshHarington\\LaravelLTI\\' => 25,
+        ),
         'I' => 
         array (
             'IMSGlobal\\LTI\\' => 14,
@@ -14,6 +22,10 @@ class ComposerStaticInitf07ee47ab0dd0348127c0fbb805488c2
     );
 
     public static $prefixDirsPsr4 = array (
+        'JoshHarington\\LaravelLTI\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'IMSGlobal\\LTI\\' => 
         array (
             0 => __DIR__ . '/..' . '/imsglobal/lti/src',

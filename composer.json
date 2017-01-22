@@ -17,6 +17,6 @@
     ]
   },
   "require": {
-    "imsglobal/lti": "*"
+    "IMSGlobal/LTI" : "^3.0.0"
   }
 }

@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'JoshHarington\\LaravelLTI\\' => array($baseDir . '/src'),
     'IMSGlobal\\LTI\\' => array($vendorDir . '/imsglobal/lti/src'),
 );
