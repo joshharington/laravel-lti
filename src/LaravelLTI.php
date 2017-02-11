@@ -11,8 +11,6 @@ class LaravelLTI {
     }
 
     public function launch($launch_url, $key, $secret, $launch_data = []) {
-
-
         #
         # END OF CONFIGURATION SECTION
         # ------------------------------
@@ -37,6 +35,8 @@ class LaravelLTI {
         $base_string = "POST&" . urlencode($launch_url) . "&" . rawurlencode(implode("&", $launch_params));
         $secret = urlencode($secret) . "&";
         $signature = base64_encode(hash_hmac("sha1", $base_string, $secret, true));
+
+//        dd($signature);
 
         return view('jh.lti::layouts.tools.launch', ['signature' => $signature, 'launch_url' => $launch_url, 'launch_data' => $launch_data]);
     }

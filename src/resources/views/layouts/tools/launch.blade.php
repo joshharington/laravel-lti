@@ -18,7 +18,20 @@
 </head>
     <body>
         <div id="content">
-            <iframe width="100%" height="100%" frameborder="0" src="{{ $launch_url }}" />
+            {{--<form id="frameform" method="POST" target="idIframe" action="{{ $launch_url }}">--}}
+                {{--@foreach($launch_data as $key => $value)--}}
+                    {{--<input type="hidden" name="{{ $key }}" value="{{ $value }}" />--}}
+                {{--@endforeach--}}
+
+            {{--</form>--}}
+            <iframe src="{{ $launch_url }}" width="100%" height="100%" class="composite-embed" id="idIframe" frameborder="0"/>
+
         </div>
+
+        <script src="/vendor/storyline/core/js/jquery-3.1.1.min.js"></script>
+        <script>
+            var form = document.getElementById('frameform');
+            form.submit();
+        </script>
     </body>
 </html>
